@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<htlm lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bproo Store Dev - Design d'un site de ecommerce</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<!--Menu-->
+    <section class="header-section">
+        <div class="container">
+            <header class="navbar">
+                <div class="logo">
+                    <a href="index.html"><img src="image/logo.png" alt="Bproo logo"></a>
+                </div>
+                <nav>
+                    <ul id="menuItems">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="produits.html">Produits</a></li>
+                        <li><a href="">A propos</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="authentification.html">Account</a></li>
+                    </ul>
+                    <a href="panier.html"><img src="image/cart.png" alt="cart-icon" width="26px"></a>
+                    <img src="image/menu.png" alt="menu" width="26px" class="menu-icon" onclick="toogleButton()">
+                </nav>
+            </header>
+
+            <div class="row">
+                <div class="col-2">
+                    <h1>Donnez à votre entrainement <br> un nouveau style!</h1>
+                    <p>Le succès n'est pas toujours une question de grandeur.<br> C'est une question de cohérence. Un travail acharné et consistant gagne du sccèes. La grandeur viendra!</p>
+                    <a href="produits.html">Explorez maintenant &#8594;</a>
+                </div>
+                <div class="col-2">
+                    <img src="image/image1.png" alt="landing image">
+                </div>
+            </div>
+        </div>      
+    </section>
+<!--Section des catégories-->
+    <section class="categories">
+        <div class="container">
+            <h2>Categories Vedettes</h2>
+            <div class="row">
+                <div class="col-3">
+                    <img src="image/category-1.jpg" alt="">
+                </div>
+                <div class="col-3">
+                    <img src="image/category-2.jpg" alt="">
+                </div>
+                <div class="col-3">
+                    <img src="image/category-3.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+<!--Meilleurs produits-->
+    <section class="featured-products">
+        <div class="container">
+            <h2>Meilleurs Produits</h2>
+            <div class="row">
+                <div class="col-4">
+                    <a href="produit-detail.html"><img src="image/product-1.jpg" alt="produit 1"></a>
+                    <h3>T-shirt Puma rouge</h3>
+
+                        <div class="rating">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                    <p>5000 fcfa</p>
+                </div>
+                <div class="col-4">
+                    <img src="image/product-2.jpg" alt="produit 2">
+                    <h3>Chaussure de sport</h3>
+                    <div class="rating">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>7000 fcfa</p>
+                </div>
+                <div class="col-4">
+                    <img src="image/product-3.jpg" alt="produit 3">
+                    <h3>Pantalon</h3>
+                    <div class="rating">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                        <i class="fa fa-star-o"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>5500 fcfa</p>
+                </div>
+                <div class="col-4">
+                    <img src="image/product-4.jpg" alt="produit 4">
+                    <h3>T-shirt Puma bleu</h3>
+                    <div class="rating">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star-o"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>3500 fcfa</p>
+                </div>
+            </div>
+        </div>
+    </section>
+<!--nos derniers produits-->
+
+<section class="featured-products">
+    <div class="container">
+        <h2>Nos Derniers Produits</h2>
+        <div class="row">
+            <div class="col-4">
+                <img src="image/product-5.jpg" alt="produit 5">
+                <h3>T-shirt Puma rouge</h3>
+
+                    <div class="rating">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                <p>5000 fcfa</p>
+            </div>
+            <div class="col-4">
+                <img src="image/product-6.jpg" alt="produit 6">
+                <h3>Chaussure de sport</h3>
+                <div class="rating">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>7000 fcfa</p>
+            </div>
+            <div class="col-4">
+                <img src="image/product-7.jpg" alt="produit 7">
+                <h3>Pantalon</h3>
+                <div class="rating">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>5500 fcfa</p>
+            </div>
+            <div class="col-4">
+                <img src="image/product-8.jpg" alt="produit 8">
+                <h3>T-shirt Puma bleu</h3>
+                <div class="rating">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>3500 fcfa</p>
+            </div>
+            <div class="col-4">
+                <img src="image/product-9.jpg" alt="produit 9">
+                <h3>T-shirt Puma bleu</h3>
+                <div class="rating">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>3500 fcfa</p>
+            </div>
+            <div class="col-4">
+                <img src="image/product-10.jpg" alt="produit 10">
+                <h3>T-shirt Puma bleu</h3>
+                <div class="rating">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>3500 fcfa</p>
+            </div>
+            <div class="col-4">
+                <img src="image/product-11.jpg" alt="produit 11">
+                <h3>T-shirt Puma bleu</h3>
+                <div class="rating">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>3500 fcfa</p>
+            </div>
+            <div class="col-4">
+                <img src="image/product-12.jpg" alt="produit 12">
+                <h3>T-shirt Puma bleu</h3>
+                <div class="rating">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>3500 fcfa</p>
+            </div>
+        </div>
+    </div>
+    </section>    
+    </section>
+<!--offre exclusive-->
+    <section class="offre-exclusive">
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                    <img src="image/exclusive.png" alt="" class="offre-img">
+                </div>
+                <div class="col-2">
+                    <p>Exclusivement disponible sur Bproo Store</p>
+                    <h1>Smart Band 4</h1>
+                    <small>
+                        Le Mi Smart Band 4 dispose d'un 39.95% plus grand (plus que Mi Band 3) écran tactile coloré AMOLED avec luminosité réglable; pour que tout soit clair comme possible.
+                    </small>
+                    <a href="">Achetez Maintenant &#8594;</a>
+                </div>
+            </div>
+        </div>
+    </section>    
+<!--Session des témoignages-->
+    <section class="testimonial">
+       <div class="container">
+        <div class="row">
+            <div class="col-3">
+                <i class="fa fa-quote-left" aria-hidden="true"></i>
+                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus iusto.</P>
+                <div class="rating">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <img src="image/user-1.png" alt="utilisateur">
+                <h3>Auriole Diva</h3>
+            </div>
+            <div class="col-3">
+                <i class="fa fa-quote-left" aria-hidden="true"></i>
+                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus iusto.</P>
+                <div class="rating">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <img src="image/user-2.png" alt="utilisateur">
+                <h3>Steph Fashion</h3>
+            </div>
+            
+            <div class="col-3">
+                <i class="fa fa-quote-left" aria-hidden="true"></i>
+                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus iusto.</P>
+                <div class="rating">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <img src="image/user-3.png" alt="utilisateur">
+                <h3>Lady Boss</h3>
+            </div>
+        </div>
+       </div>
+    </section>
+<!--Marques-->
+    <section class="brands">
+        <div class="container">
+            <div class="row">
+                <div class="col-5">
+                    <img src="image/logo-coca-cola.png" alt="">
+                </div>
+                <div class="col-5">
+                    <img src="image/logo-godrej.png" alt="">
+                </div>
+                <div class="col-5">
+                    <img src="image/logo-oppo.png" alt="">
+                </div>
+                <div class="col-5">
+                    <img src="image/logo-philips.png" alt="">
+                </div>
+                <div class="col-5">
+                    <img src="image/logo-paypal.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+<!--Footer-->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Télécharger notre appli</h3>
+                    <p>Téléchargez l'application pour téléphone mobile Android et ios</p>
+                <div class="app-logo">
+                    <img src="image/play-store.png" alt="Androi app">
+                    <img src="image/app-store.png" alt="iso app">
+                </div>
+                </div>
+                <div class="footer-col-2">
+                    <div class="white-logo">
+                        <img src="image/logo-white.png" alt="white logo">
+                    </div>
+                    <p>Notre objectif est de rendre durablement le plaisir et les bienfaits du sport accessible à tous.</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Liens Utiles</h3>
+                    <ul>
+                        <li><a href="">Coupons</a></li>
+                        <li><a href="">Articles de blog</a></li>
+                        <li><a href="">Politique de retour</a></li>
+                        <li><a href="">Rejoingnez l'affiliation</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Suivez-nous</h3>
+                    <ul>
+                        <li><a href="">Facebook</a></li>
+                        <li><a href="">Twitter</a></li>
+                        <li><a href="">Instagram</a></li>
+                        <li><a href="">YouTube</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">&copy; bproo dev 2021</p>  
+        </div>
+     </footer>
+
+     <!--javascript code-->
+     <script>
+        var menuItems = document.getElementById('menuItems');
+
+        menuItems.style.maxHeight = '0px';
+        menuItems.style.padding = '0px';
+
+        function toogleButton(){
+            if(menuItems.style.maxHeight == '0px'){
+                menuItems.style.maxHeight = '200px';
+                menuItems.style.padding = '15px';
+            }else{
+                menuItems.style.maxHeight = '0px';
+                menuItems.style.padding = '0px';
+            }  
+        }
+     </script>
+</body>
+</html>
